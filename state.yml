@@ -1,0 +1,20 @@
+lastupdatecheck: 0
+recentrepos:
+- /home/mingo/.config/lazygit
+- /home/mingo/.config/nvim
+- /mnt/d/Acc/hardware/ConvUnit
+- /home/mingo/Downloads/autoverilog.nvim
+- /home/mingo/.config/joshuto
+- /home/mingo/.config/nushell
+- /mnt/d/soc/rtl_basic
+- /home/mingo/Downloads/joshuto
+- /mnt/d/Acc/software/nets/retinafacenet
+- /home/mingo/.local/share/nvim/lazy/autoverilog.nvim
+- /home/mingo/Code/autoverilog.nvim
+- /home/mingo/.zsh
+startuppopupversion: 5
+customcommandshistory:
+- wq
+- help
+hidecommandlog: false
+ignorewhitespaceindiffview: false
