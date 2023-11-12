@@ -13,6 +13,7 @@ gui:
     optionsTextColor: [blue]
     selectedLineBgColor: [blue]
     selectedRangeBgColor: [blue]
+notARepository: skip # one of: 'prompt' | 'create' | 'skip' | 'quit'
 keybinding:
   universal:
     undo: u
