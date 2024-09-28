@@ -4,6 +4,7 @@ git:
   paging:
     colorArg: always
     pager: delta --dark --paging=never --24-bit-color=never --syntax-theme="TwoDark"
+  branchLogCmd: git log --color --graph --pretty=format:'%Cred%h%Creset - %C(bold blue)%an,%Creset %Cgreen%cr%C(yellow)%d%Creset ':' %s' --abbrev-commit {{branchName}} --
 gui:
   border: rounded
   showBottomLine: false
@@ -12,9 +13,24 @@ gui:
     inactiveBorderColor: [white]
     optionsTextColor: [blue]
     selectedLineBgColor: [blue]
-    selectedRangeBgColor: [blue]
 notARepository: skip # one of: 'prompt' | 'create' | 'skip' | 'quit'
 keybinding:
   universal:
     undo: u
     redo: <c-r>
+customCommands:
+  - key: b
+    command: tig blame -- {{.SelectedFile.Name}}
+    context: files
+    description: blame file at tree
+    subprocess: true
+  - key: b
+    command: tig blame {{.SelectedSubCommit.Sha}} -- {{.SelectedCommitFile.Name}}
+    context: commitFiles
+    description: blame file at revision
+    subprocess: true
+  - key: B
+    command: tig blame -- {{.SelectedCommitFile.Name}}
+    context: commitFiles
+    description: blame file at tree
+    subprocess: true
