@@ -4,7 +4,7 @@ git:
   paging:
     colorArg: always
     pager: delta --dark --paging=never --24-bit-color=never --syntax-theme="TwoDark"
-  branchLogCmd: git log --color --graph --pretty=format:'%Cred%h%Creset - %C(bold blue)%an,%Creset %Cgreen%cr%C(yellow)%d%Creset, %s' --abbrev-commit {{branchName}} --
+  # branchLogCmd: git log --color --graph --pretty=format:'%Cred%h%Creset - %C(bold blue)%an,%Creset %Cgreen%cr%C(yellow)%d%Creset ':' %s' --abbrev-commit {{branchName}} --
 gui:
   border: rounded
   showBottomLine: false
